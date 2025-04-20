@@ -1,6 +1,6 @@
 # Gold Glide
 ## it is a mini fun game . It will pass your boring time.
-# deployed link : Link[https://bespoke-pavlova-9e5056.netlify.app/]
+# deployed link : [Link](https://bespoke-pavlova-9e5056.netlify.app/)
 
 here is some preview of the Game
 

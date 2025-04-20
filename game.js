@@ -86,24 +86,24 @@ class mainScene {
     this.player.setVelocity(0); // Reset velocity to 0 before checking input
       if(this.arrow.right.isDown) {
          // If the right arrow is pressed, move to the right
-        this.player.setVelocityX(350)
+        this.player.setVelocityX(450)
       }else if(this.arrow.left.isDown) {
         // If the left arrow is pressed, move to the left
-        this.player.setVelocityX(-350)
+        this.player.setVelocityX(-450)
     }
         if(this.arrow.up.isDown) {
             // If the up arrow is pressed, move up
-            this.player.setVelocityY(-350)
+            this.player.setVelocityY(-450)
         }else if(this.arrow.down.isDown) {
             // If the down arrow is pressed, move down
-            this.player.setVelocityY(350)
+            this.player.setVelocityY(450)
         }
     }
     hit(){
         if (this.gameOver) return;
         // Change the position x and y of the coin randomly
-        this.coin.x = Phaser.Math.Between(100, 600);
-        this.coin.y = Phaser.Math.Between(100, 300);
+        this.coin.x = Phaser.Math.Between(100, 1400);
+        this.coin.y = Phaser.Math.Between(100, 600);
         // Increment the score by 10
         this.score += 10;
         // Update the score text

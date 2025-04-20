@@ -86,24 +86,24 @@ class mainScene {
     this.player.setVelocity(0); // Reset velocity to 0 before checking input
       if(this.arrow.right.isDown) {
          // If the right arrow is pressed, move to the right
-        this.player.setVelocityX(550)
+        this.player.setVelocityX(350)
       }else if(this.arrow.left.isDown) {
         // If the left arrow is pressed, move to the left
-        this.player.setVelocityX(-550)
+        this.player.setVelocityX(-350)
     }
         if(this.arrow.up.isDown) {
             // If the up arrow is pressed, move up
-            this.player.setVelocityY(-550)
+            this.player.setVelocityY(-350)
         }else if(this.arrow.down.isDown) {
             // If the down arrow is pressed, move down
-            this.player.setVelocityY(550)
+            this.player.setVelocityY(350)
         }
     }
     hit(){
         if (this.gameOver) return;
         // Change the position x and y of the coin randomly
-        this.coin.x = Phaser.Math.Between(100, 1400);
-        this.coin.y = Phaser.Math.Between(100, 600);
+        this.coin.x = Phaser.Math.Between(100, 1100);
+        this.coin.y = Phaser.Math.Between(100, 570);
         // Increment the score by 10
         this.score += 10;
         // Update the score text
@@ -145,8 +145,8 @@ class mainScene {
       }
   }
   new Phaser.Game({
-    width: 1400, // Width of the game in pixels
-    height: 600, // Height of the game in pixels
+    width: 1100, // Width of the game in pixels
+    height: 570, // Height of the game in pixels
     backgroundColor: '#3498db', // The background color (blue)
     scene: mainScene, // The name of the scene we created
     physics: { default: 'arcade' }, // The physics engine to use

@@ -1,4 +1,4 @@
-# Phaser-Game
+# Gold Glide
 ## it is a mini fun game . It will pass your boring time.
 # deployed link : Link[https://bespoke-pavlova-9e5056.netlify.app/]
 

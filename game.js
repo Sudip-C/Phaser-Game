@@ -86,17 +86,17 @@ class mainScene {
     this.player.setVelocity(0); // Reset velocity to 0 before checking input
       if(this.arrow.right.isDown) {
          // If the right arrow is pressed, move to the right
-        this.player.setVelocityX(450)
+        this.player.setVelocityX(550)
       }else if(this.arrow.left.isDown) {
         // If the left arrow is pressed, move to the left
-        this.player.setVelocityX(-450)
+        this.player.setVelocityX(-550)
     }
         if(this.arrow.up.isDown) {
             // If the up arrow is pressed, move up
-            this.player.setVelocityY(-450)
+            this.player.setVelocityY(-550)
         }else if(this.arrow.down.isDown) {
             // If the down arrow is pressed, move down
-            this.player.setVelocityY(450)
+            this.player.setVelocityY(550)
         }
     }
     hit(){
